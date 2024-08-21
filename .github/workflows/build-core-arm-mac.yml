@@ -16,7 +16,9 @@ name: build-core-arm-mac
         required: false
         type: boolean
         default: true
-  pull_request: -- Add this here
+  push:
+    branches:
+      - v1.52.0-custom
 jobs:
   build-core:
     runs-on: macos-13-xlarge
